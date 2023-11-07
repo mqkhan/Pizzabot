@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pizzabot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pizza Order Form</h1>
+      <form id="frm1" action="/action_page.php" method="post">
+        <div class="pizzaName">
+          <label for="pizzaType"><p>Pizza Type</p></label>
+          <select name="pizzaType" id="pizzaType" required>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="hawaiian">Hawaiian</option>
+            <option value="pepperoni">Pepperoni</option>
+          </select>
+
+          <br />
+          <br />
+
+          <label for="numberOfPizzas">Number of Pizzas:</label>
+          <input
+            type="number"
+            name="numberOfPizzas"
+            id="numberOfPizzas"
+            min="1"
+            required
+          />
+
+          <br />
+          <br />
+
+          <input type="button" value="Place Order" onclick="calculateTotal()" />
+
+          <p id="quantityOfPizza"></p>
+
+          <p id="orderTotal"></p>
+        </div>
+      </form>
+    </div>
+
+    <script src="./pizzabotDom.js" charset="utf-8"></script>
+    <!-- <script src="./practiceConsolIfElse.js" charset="utf-8"></script> -->
+    <!-- <script src="./pizzabotConsolFunctions.js" charset="utf-8"></script> -->
+  </body>
+</html>

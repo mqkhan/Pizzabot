@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: #ff4136;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  /* Optionally, you can set a fixed height and width or use other properties as needed */
+  width: 50%;
+  height: 50vh;
+  /* Additional styling */
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
