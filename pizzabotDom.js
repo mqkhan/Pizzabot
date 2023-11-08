@@ -4,9 +4,6 @@ const typeOfPizzaEl = document.getElementById("typeOfPizza");
 
 const orderTotalEl = document.getElementById("orderTotal");
 const pizzaPrice = 80;
-const vegetarian = "Vegetarian";
-const hawaiian = "Hawaiian";
-const pepperoni = "Pepperoni";
 
 function calculateTotal() {
   const numberOfPizzasEl = document.getElementById("numberOfPizzas").value;
